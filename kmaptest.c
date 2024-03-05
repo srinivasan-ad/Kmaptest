@@ -3,6 +3,7 @@ int arr[8];
 int input[8];
 int size = 0;
 int quad,octet=0;
+int quad5val[3],quad6val[3];
 int sizearr(int size) {
     return size;
 }
@@ -93,15 +94,23 @@ printf("quad3 :%d",quad3);
 printf("quad4 :%d",quad4);
 printf("quad5 :%d",quad5);
 printf("quad6 :%d",quad6);
-if(quad3==4 && quad4==4){
-    octet=1;
-    return octet;
+    printf("quad 5 values : \n");
+for(int o =0 ; quad5val[o]!='\0';i++){
+    printf("%d\t",quad5val[o]);
 }
-else{
+
+
+
 
 return quad;
-}
 
+
+}
+//Starting pairs
+int pairs(int arr[],int input[]){
+    if(quad==0){
+ 
+    }
 }
 
 int main() {
@@ -123,8 +132,13 @@ printf("%d\n",size);
     storing(input, size);
     display();
     int q=quadandoctet(arr);
- printf("\nNumber of quads are : %d , Number of octets are : 0\n",q);
-   
+    if(q<6){
+
+ printf("\nNumber of quads are : %d ",q);
+    }
+   else{
+    printf("Number of octets are : 1\n");
+   }
 printf("quad : %d",quad);
     return 0;
 }
