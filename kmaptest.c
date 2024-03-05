@@ -6,7 +6,7 @@ int quad,octet=0;
 int sizearr(int size) {
     return size;
 }
-
+// storing input in array fo map
 void storing(int input[], int size) {
     int i, j = 0;
     for (i = 0; i < 8; i++) {
@@ -41,24 +41,22 @@ int quad4 =0;
 int quad5=0;
 int quad6=0;
 printf("\n%d\n",quad1);
-for ( i = 0; i < 4; i++)
+
+for ( j = 0; j < mid; j++)
 {
     // center and roll map
-    if (arr[2*i] == 1){
+    if (arr[2*j] == 1){
         quad1++;
         if(quad1==4){
             quad++;
         }
     }
-    if (arr[2*i+1] == 1){
+    if (arr[2*j+1] == 1){
         quad2++;
         if(quad2==4){
             quad++;
         }
     }
-}
-for ( j = 0; j < mid; j++)
-{
 //  checking rows 
     if(arr[j]==1){
         quad3++;
@@ -109,9 +107,9 @@ return quad;
 int main() {
     int i = 0;
     char l;
-    printf("Enter the values of the input array :\n");
+    printf("Enter the values of the input array , in the start press n :\n");
     for (i = 0; i < 8; i++) {
-        printf("To terminate input press 9 \n");
+        printf("To terminate input press y \n");
         scanf("%c", &l);
         if (l == 'y') {
             break;
